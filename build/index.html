@@ -9,17 +9,22 @@
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Landing Page</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
 
-    <link rel="icon" href="./img/favicon.svg">
-    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="icon" href="../img/favicon.svg">
+    <link rel="stylesheet" href="../css/style.min.css">
 </head>
 
 <body class="main__body">
+
+    <!-- Test -->
+    
 
 
     <!-- Header -->
@@ -27,7 +32,7 @@
     
     <nav class="header__nav">
     <a class="header__logo" href="/">
-        <img src="./img/logo.svg" alt="logo">
+        <img src="../img/logo.svg" alt="logo">
     </a>
 
     <div class="header__menu">
@@ -99,25 +104,471 @@
                 <h1>Откройте для себя мир танца</h1>
             </div>
 
-            <button class="btn">Записаться на занятие</button>
+            <button class="btn btn-sec">Записаться на занятие</button>
         </div>
     </div>
 </header>
 
+    <!-- Ways-list -->
+    <section class="ways-list list">
+    <div class="container">
+        <div class="list__wrapper">
+            <div class="list__top">
+                <h2 class="section-title">Направления</h2>
 
-    <!-- Test -->
-    
+                <div class="list__swiper-btns ways-list__btns">
+                    <div class="list__swiper-prev list__swiper-btn">
+                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9.85054 4.64933C9.50341 4.30219 8.9406 4.30219 8.59346 4.64933L2.37124 10.8715C2.02411 11.2187 2.02411 11.7815 2.37124 12.1286L8.59346 18.3508C8.9406 18.698 9.50341 18.698 9.85054 18.3508C10.1977 18.0037 10.1977 17.4409 9.85054 17.0938L5.14575 12.389H18.9998C19.4907 12.389 19.8887 11.991 19.8887 11.5001C19.8887 11.0092 19.4907 10.6112 18.9998 10.6112H5.14575L9.85054 5.90641C10.1977 5.55927 10.1977 4.99646 9.85054 4.64933Z"
+                                fill="#282828" />
+                        </svg>
+                    </div>
+
+                    <div class="list__swiper-next list__swiper-btn">
+                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.1495 4.64933C12.4966 4.30219 13.0594 4.30219 13.4065 4.64933L19.6288 10.8715C19.9759 11.2187 19.9759 11.7815 19.6288 12.1286L13.4065 18.3508C13.0594 18.698 12.4966 18.698 12.1495 18.3508C11.8023 18.0037 11.8023 17.4409 12.1495 17.0938L16.8542 12.389H3.00022C2.5093 12.389 2.11133 11.991 2.11133 11.5001C2.11133 11.0092 2.5093 10.6112 3.00022 10.6112H16.8542L12.1495 5.90641C11.8023 5.55927 11.8023 4.99646 12.1495 4.64933Z"
+                                fill="#282828" />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="list__swiper">
+                <div class="swiper ways-list__swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="list__card" style="background-image: url('../img/ways-list-1.jpg');">
+                                <!-- <img src="../img/ways-list-1.jpg" alt="ways"> -->
+                                <h5>Bianco Carrara</h5>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="list__card" style="background-image: url('../img/ways-list-2.jpg');">
+                                <!-- <img src="../img/ways-list-2.jpg" alt="ways"> -->
+                                <h5>Bianco Carrara</h5>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="list__card" style="background-image: url('../img/ways-list-3.jpg');">
+                                <!-- <img src="../img/ways-list-3.jpg" alt="ways"> -->
+                                <h5>Bianco Carrara</h5>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="list__card" style="background-image: url('../img/ways-list-1.jpg');">
+                                <!-- <img src="../img/ways-list-1.jpg" alt="ways"> -->
+                                <h5>Bianco Carrara</h5>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="list__card" style="background-image: url('../img/ways-list-2.jpg');">
+                                <!-- <img src="../img/ways-list-2.jpg" alt="ways"> -->
+                                <h5>Bianco Carrara</h5>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="list__card" style="background-image: url('../img/ways-list-3.jpg');">
+                                <!-- <img src="../img/ways-list-3.jpg" alt="ways"> -->
+                                <h5>Bianco Carrara</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="list__filter">
+                <button class="btn btn-sec">Для детей</button>
+                <button class="btn">Для взрослых</button>
+                <button class="btn">Учебные классы</button>
+                <button class="btn">Смотреть все</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Mentor-list -->
+    <section class="mentor-list list">
+    <div class="container">
+        <div class="list__wrapper">
+            <div class="list__top">
+                <h2 class="section-title">Наставники</h2>
+
+                <div class="list__swiper-btns mentor-list__btns">
+                    <div class="list__swiper-prev list__swiper-btn">
+                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9.85054 4.64933C9.50341 4.30219 8.9406 4.30219 8.59346 4.64933L2.37124 10.8715C2.02411 11.2187 2.02411 11.7815 2.37124 12.1286L8.59346 18.3508C8.9406 18.698 9.50341 18.698 9.85054 18.3508C10.1977 18.0037 10.1977 17.4409 9.85054 17.0938L5.14575 12.389H18.9998C19.4907 12.389 19.8887 11.991 19.8887 11.5001C19.8887 11.0092 19.4907 10.6112 18.9998 10.6112H5.14575L9.85054 5.90641C10.1977 5.55927 10.1977 4.99646 9.85054 4.64933Z"
+                                fill="#282828" />
+                        </svg>
+                    </div>
+
+                    <div class="list__swiper-next list__swiper-btn">
+                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.1495 4.64933C12.4966 4.30219 13.0594 4.30219 13.4065 4.64933L19.6288 10.8715C19.9759 11.2187 19.9759 11.7815 19.6288 12.1286L13.4065 18.3508C13.0594 18.698 12.4966 18.698 12.1495 18.3508C11.8023 18.0037 11.8023 17.4409 12.1495 17.0938L16.8542 12.389H3.00022C2.5093 12.389 2.11133 11.991 2.11133 11.5001C2.11133 11.0092 2.5093 10.6112 3.00022 10.6112H16.8542L12.1495 5.90641C11.8023 5.55927 11.8023 4.99646 12.1495 4.64933Z"
+                                fill="#282828" />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="list__swiper">
+                <div class="swiper mentor-list__swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="list__card">
+                                <img src="../img/mentor-list-1.jpg" alt="ways">
+                                <div class="list__card-box">
+                                    <h3>Чадова Елизавета</h3>
+                                    <p>Тренер по Бачате</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="list__card">
+                                <img src="../img/mentor-list-1.jpg" alt="ways">
+                                <div class="list__card-box">
+                                    <h3>Чадова Елизавета</h3>
+                                    <p>Тренер по Бачате</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="list__card">
+                                <img src="../img/mentor-list-1.jpg" alt="ways">
+                                <div class="list__card-box">
+                                    <h3>Чадова Елизавета</h3>
+                                    <p>Тренер по Бачате</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="list__card">
+                                <img src="../img/mentor-list-1.jpg" alt="ways">
+                                <div class="list__card-box">
+                                    <h3>Чадова Елизавета</h3>
+                                    <p>Тренер по Бачате</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="list__card">
+                                <img src="../img/mentor-list-1.jpg" alt="ways">
+                                <div class="list__card-box">
+                                    <h3>Чадова Елизавета</h3>
+                                    <p>Тренер по Бачате</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="list__card">
+                                <img src="../img/mentor-list-1.jpg" alt="ways">
+                                <div class="list__card-box">
+                                    <h3>Чадова Елизавета</h3>
+                                    <p>Тренер по Бачате</p>
+                                </div>
+                            </div>
+                        </div>
 
 
+                    </div>
+                </div>
+            </div>
 
-    <!-- Main Page -->
-    <main></main>
+            <div class="list__filter none">
+                <button class="btn btn-sec">Для детей</button>
+                <button class="btn">Для взрослых</button>
+                <button class="btn">Учебные классы</button>
+                <button class="btn">Смотреть все</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- About-inner -->
+    <section class="about">
+    <div class="container">
+
+        <div class="about__wrap">
+
+            <img class="about__bg-img" src="../img/palm-bg.svg" alt="img-bg">
+
+            <div class="about__box">
+                <h2 class="section-title">О нас</h2>
+                <p class="section-text">В нашей студии мы верим, что танец — это не только искусство, но и способ
+                    выразить свои чувства, улучшить физическую форму и завести новых друзей. Tropicano — это место, где
+                    каждый, независимо от уровня подготовки, может найти своё направление и раскрыть свои таланты.</p>
+
+                <div class="about__inner">
+                    <div class="about__inner-box">
+                        <p>Tropicano была основана командой увлечённых танцоров и хореографов, которые мечтают
+                            поделиться своей страстью к танцу с другими. Наша студия предлагает широкий ассортимент
+                            стилей танца: от зажигательных латинских ритмов до грациозного современного танца. Мы
+                            убеждены, что танец доступен каждому, и стараемся создать комфортную и поддерживающую
+                            атмосферу для обучения.</p>
+                        <p>Мы предлагаем классы для детей и взрослых всех возрастов и уровней подготовки. Независимо от
+                            того, хотите ли вы научиться основам или углубиться в сложные техники, у нас есть подходящая
+                            программа для вас. Наши опытные инструкторы помогут вам освоить танцевальные движения,
+                            развить координацию и уверенность в себе</p>
+                    </div>
+
+                    <div class="about__inner-box">
+                        <p>Мы регулярно проводим мастер-классы с приглашёнными хореографами, а также организуем
+                            танцевальные вечеринки и конкурсы, где вы сможете продемонстрировать свои навыки и
+                            познакомиться с единомышленниками.</p>
+                        <p>Приходите на наши занятия, и вы увидите, как танец может изменить вашу жизнь! Станьте частью
+                            нашей дружной танцевальной семьи в Tropicano. Мы ждем вас на наших курсах и будем рады
+                            помочь вам сделать первый шаг на пути к вашему танцевальному мастерству!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Event-list -->
+    <section class="event-list list">
+    <div class="container">
+        <div class="list__wrapper">
+            <div class="list__top">
+                <h2 class="section-title">События</h2>
+
+                <div class="list__swiper-btns event-list__btns">
+                    <div class="list__swiper-prev list__swiper-btn">
+                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9.85054 4.64933C9.50341 4.30219 8.9406 4.30219 8.59346 4.64933L2.37124 10.8715C2.02411 11.2187 2.02411 11.7815 2.37124 12.1286L8.59346 18.3508C8.9406 18.698 9.50341 18.698 9.85054 18.3508C10.1977 18.0037 10.1977 17.4409 9.85054 17.0938L5.14575 12.389H18.9998C19.4907 12.389 19.8887 11.991 19.8887 11.5001C19.8887 11.0092 19.4907 10.6112 18.9998 10.6112H5.14575L9.85054 5.90641C10.1977 5.55927 10.1977 4.99646 9.85054 4.64933Z"
+                                fill="#282828" />
+                        </svg>
+                    </div>
+
+                    <div class="list__swiper-next list__swiper-btn">
+                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.1495 4.64933C12.4966 4.30219 13.0594 4.30219 13.4065 4.64933L19.6288 10.8715C19.9759 11.2187 19.9759 11.7815 19.6288 12.1286L13.4065 18.3508C13.0594 18.698 12.4966 18.698 12.1495 18.3508C11.8023 18.0037 11.8023 17.4409 12.1495 17.0938L16.8542 12.389H3.00022C2.5093 12.389 2.11133 11.991 2.11133 11.5001C2.11133 11.0092 2.5093 10.6112 3.00022 10.6112H16.8542L12.1495 5.90641C11.8023 5.55927 11.8023 4.99646 12.1495 4.64933Z"
+                                fill="#282828" />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="list__swiper">
+                <div class="swiper event-list__swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="list__card" style="background-image: url('../img/ways-list-1.jpg');">
+                                <!-- <img src="../img/ways-list-1.jpg" alt="ways"> -->
+                                <h4>01.01.2025</h4>
+                                <h5>Bianco Carrara</h5>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="list__card" style="background-image: url('../img/ways-list-2.jpg');">
+                                <!-- <img src="../img/ways-list-2.jpg" alt="ways"> -->
+                                <h4>01.01.2025</h4>
+                                <h5>Bianco Carrara</h5>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="list__card" style="background-image: url('../img/ways-list-3.jpg');">
+                                <!-- <img src="../img/ways-list-3.jpg" alt="ways"> -->
+                                <h4>01.01.2025</h4>
+                                <h5>Bianco Carrara</h5>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="list__card" style="background-image: url('../img/ways-list-1.jpg');">
+                                <!-- <img src="../img/ways-list-1.jpg" alt="ways"> -->
+                                <h4>01.01.2025</h4>
+                                <h5>Bianco Carrara</h5>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="list__card" style="background-image: url('../img/ways-list-2.jpg');">
+                                <!-- <img src="../img/ways-list-2.jpg" alt="ways"> -->
+                                <h4>01.01.2025</h4>
+                                <h5>Bianco Carrara</h5>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="list__card" style="background-image: url('../img/ways-list-3.jpg');">
+                                <!-- <img src="../img/ways-list-3.jpg" alt="ways"> -->
+                                <h4>01.01.2025</h4>
+                                <h5>Bianco Carrara</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Contacts -->
+    <section class="contacts">
+    <div class="container">
+        <div class="contacts__wrapper">
+            <div class="contacts__top">
+                <h2 class="section-title">Контакты</h2>
+            </div>
+
+            <div class="contacts__inner">
+                <div class="contacts__box">
+                    <div>
+                        <h5>Адрес</h5>
+                        <p>пл. Победы, 6 Б (ТЦ "Центральный"), 3 этаж, Липецк</p>
+                    </div>
+
+                    <div>
+                        <h5>Телефон</h5>
+                        <p>+7 (904) 684-79-41</p>
+                    </div>
+
+                    <div>
+                        <h5>Электронная почта</h5>
+                        <p>tropicana@inbox.ru</p>
+                    </div>
+                </div>
+
+                <div class="contacts__soc">
+                    <a href="">
+                        Связяться в Telegram
+                        <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" width="56" height="56" rx="8" fill="#03381F" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M29.7107 21.0129C27.203 22.056 22.191 24.2148 14.6749 27.4895C13.4543 27.9749 12.815 28.4497 12.7568 28.914C12.6584 29.6986 13.641 30.0076 14.979 30.4283C15.161 30.4855 15.3496 30.5448 15.543 30.6077C16.8594 31.0356 18.6302 31.5362 19.5508 31.5561C20.3858 31.5742 21.3178 31.2299 22.3468 30.5233C29.3694 25.7829 32.9945 23.3868 33.2221 23.3352C33.3827 23.2987 33.6052 23.2529 33.7559 23.3869C33.9067 23.5209 33.8918 23.7746 33.8759 23.8427C33.7785 24.2577 29.9215 27.8435 27.9255 29.6992C27.3032 30.2777 26.8619 30.6881 26.7716 30.7818C26.5695 30.9917 26.3635 31.1903 26.1655 31.3812C24.9425 32.5601 24.0254 33.4442 26.2163 34.888C27.2692 35.5818 28.1116 36.1556 28.9522 36.7279C29.8701 37.353 30.7856 37.9765 31.9701 38.753C32.2719 38.9508 32.5602 39.1563 32.8409 39.3564C33.9091 40.118 34.8688 40.8022 36.0545 40.6931C36.7434 40.6297 37.4551 39.9819 37.8165 38.0498C38.6706 33.4836 40.3495 23.5902 40.7376 19.5133C40.7715 19.1561 40.7288 18.699 40.6944 18.4983C40.6601 18.2977 40.5883 18.0118 40.3275 17.8001C40.0186 17.5494 39.5417 17.4966 39.3284 17.5002C38.3587 17.5174 36.8709 18.0348 29.7107 21.0129Z"
+                                fill="#FFFDFC" />
+                        </svg>
+
+                    </a>
+
+                    <a href="">
+                        Связяться в WhatsApp
+                        <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="56" height="56" rx="8" fill="#03381F" />
+                            <g clip-path="url(#clip0_40_725)">
+                                <path
+                                    d="M33.7584 29.7909C33.7116 29.7685 31.962 28.9069 31.651 28.795C31.5241 28.7494 31.3881 28.7049 31.2435 28.7049C31.0073 28.7049 30.8088 28.8227 30.6542 29.0539C30.4794 29.3137 29.9503 29.9322 29.7868 30.117C29.7655 30.1413 29.7363 30.1705 29.7189 30.1705C29.7032 30.1705 29.4324 30.059 29.3505 30.0234C27.4736 29.2081 26.0489 27.2475 25.8536 26.9169C25.8257 26.8693 25.8245 26.8477 25.8243 26.8477C25.8311 26.8226 25.8942 26.7593 25.9268 26.7266C26.0221 26.6324 26.1254 26.5081 26.2253 26.3878C26.2726 26.3309 26.3199 26.2738 26.3664 26.2201C26.5114 26.0515 26.5759 25.9205 26.6507 25.7689L26.6899 25.6901C26.8726 25.3272 26.7166 25.021 26.6661 24.9221C26.6248 24.8394 25.886 23.0564 25.8074 22.869C25.6186 22.417 25.369 22.2065 25.0221 22.2065C24.99 22.2065 25.0221 22.2065 24.8872 22.2122C24.7228 22.2192 23.8279 22.337 23.4322 22.5864C23.0126 22.851 22.3027 23.6942 22.3027 25.1772C22.3027 26.512 23.1497 27.7722 23.5134 28.2515C23.5224 28.2636 23.539 28.2881 23.5631 28.3233C24.9558 30.3573 26.692 31.8646 28.452 32.5677C30.1464 33.2445 30.9488 33.3228 31.405 33.3228H31.405C31.5967 33.3228 31.7502 33.3077 31.8855 33.2944L31.9714 33.2862C32.5567 33.2343 33.8431 32.5678 34.1357 31.7546C34.3662 31.1142 34.4269 30.4145 34.2736 30.1605C34.1686 29.9878 33.9875 29.901 33.7584 29.7909Z"
+                                    fill="#FFFDFC" />
+                                <path
+                                    d="M28.213 16C21.7131 16 16.425 21.2484 16.425 27.6995C16.425 29.786 16.9834 31.8284 18.0412 33.6159L16.0165 39.5883C15.9788 39.6996 16.0068 39.8227 16.0892 39.9066C16.1487 39.9673 16.2293 40 16.3117 40C16.3432 40 16.375 39.9952 16.406 39.9854L22.6336 38.0064C24.3377 38.917 26.2638 39.3976 28.2131 39.3976C34.7124 39.3977 40 34.1498 40 27.6995C40 21.2484 34.7124 16 28.213 16ZM28.213 36.9606C26.3788 36.9606 24.6023 36.4309 23.0752 35.4289C23.0238 35.3951 22.9642 35.3778 22.9042 35.3778C22.8725 35.3778 22.8407 35.3826 22.8097 35.3925L19.6901 36.3841L20.6972 33.413C20.7298 33.3169 20.7135 33.2108 20.6535 33.1288C19.4906 31.5398 18.8759 29.6625 18.8759 27.6995C18.8759 22.5922 23.0645 18.4371 28.2129 18.4371C33.3608 18.4371 37.5489 22.5922 37.5489 27.6995C37.549 32.8061 33.3609 36.9606 28.213 36.9606Z"
+                                    fill="#FFFDFC" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_40_725">
+                                    <rect width="24" height="24" fill="white" transform="translate(16 16)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+
+                    </a>
+                </div>
+            </div>
+
+            <iframe class="contacts__map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2423.0736420441162!2d39.569932676198206!3d52.60443972997501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413a14be855828d9%3A0x1019063bf606b8f9!2z0KbQtdC90YLRgNCw0LvRjNC90YvQuSDRgNGL0L3QvtC6!5e0!3m2!1sru!2s!4v1727282050663!5m2!1sru!2s"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
 
     <!-- Footer -->
-    
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__wrap">
+                <img class="footer__logo" src="../img/logo-2.svg" alt="logo">
+                <div class="footer__inner">
+                    <div class="footer__list">
+                        <a href="">пл. Победы, 6 Б (ТЦ "Центральный"), 3 этаж, Липецк</a>
+                        <a href="">+7 (904) 684-79-41</a>
+                        <a href="">tropicana@inbox.ru</a>
+
+                        <div class="footer__soc">
+                            <a href="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_40_829)">
+                                    <path d="M17.7584 13.7909C17.7116 13.7685 15.962 12.9069 15.651 12.795C15.5241 12.7494 15.3881 12.7049 15.2435 12.7049C15.0073 12.7049 14.8088 12.8227 14.6542 13.0539C14.4794 13.3137 13.9503 13.9322 13.7868 14.117C13.7655 14.1413 13.7363 14.1705 13.7189 14.1705C13.7032 14.1705 13.4324 14.059 13.3505 14.0234C11.4736 13.2081 10.0489 11.2475 9.85357 10.9169C9.82567 10.8693 9.8245 10.8477 9.82427 10.8477C9.83112 10.8226 9.89424 10.7593 9.92681 10.7266C10.0221 10.6324 10.1254 10.5081 10.2253 10.3878C10.2726 10.3309 10.3199 10.2738 10.3664 10.2201C10.5114 10.0515 10.5759 9.92054 10.6507 9.76891L10.6899 9.69013C10.8726 9.32724 10.7166 9.02101 10.6661 8.92213C10.6248 8.83937 9.88598 7.05636 9.80744 6.86904C9.61855 6.41701 9.36897 6.20654 9.02214 6.20654C8.98996 6.20654 9.02214 6.20654 8.88718 6.21223C8.72284 6.21917 7.8279 6.33698 7.43222 6.58641C7.0126 6.85096 6.30273 7.69423 6.30273 9.17724C6.30273 10.512 7.14975 11.7722 7.51341 12.2515C7.52245 12.2636 7.53905 12.2881 7.56312 12.3233C8.95583 14.3573 10.692 15.8646 12.452 16.5677C14.1464 17.2445 14.9488 17.3228 15.405 17.3228H15.405C15.5967 17.3228 15.7502 17.3077 15.8855 17.2944L15.9714 17.2862C16.5567 17.2343 17.8431 16.5678 18.1357 15.7546C18.3662 15.1142 18.4269 14.4145 18.2736 14.1605C18.1686 13.9878 17.9875 13.901 17.7584 13.7909Z" fill="#FFFDFC"/>
+                                    <path d="M12.213 0C5.71307 0 0.424969 5.24836 0.424969 11.6995C0.424969 13.786 0.983358 15.8284 2.04115 17.6159L0.0165014 23.5883C-0.0212129 23.6996 0.00683904 23.8227 0.0892027 23.9066C0.148657 23.9673 0.229307 24 0.31167 24C0.343229 24 0.375021 23.9952 0.406034 23.9854L6.63357 22.0064C8.33772 22.917 10.2638 23.3976 12.2131 23.3976C18.7124 23.3977 24 18.1498 24 11.6995C24 5.24836 18.7124 0 12.213 0ZM12.213 20.9606C10.3788 20.9606 8.60227 20.4309 7.07515 19.4289C7.0238 19.3951 6.96419 19.3778 6.90419 19.3778C6.87248 19.3778 6.84068 19.3826 6.80975 19.3925L3.69014 20.3841L4.6972 17.413C4.72977 17.3169 4.71349 17.2108 4.65349 17.1288C3.49058 15.5398 2.87585 13.6625 2.87585 11.6995C2.87585 6.59221 7.06448 2.43709 12.2129 2.43709C17.3608 2.43709 21.5489 6.59221 21.5489 11.6995C21.549 16.8061 17.3609 20.9606 12.213 20.9606Z" fill="#FFFDFC"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_40_829">
+                                    <rect width="24" height="24" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                                    
+                            </a>
+
+                            <a href="">
+                                <svg width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2107 4.01291C14.703 5.05597 9.69103 7.21484 2.17485 10.4895C0.954344 10.9749 0.314987 11.4497 0.256783 11.914C0.158418 12.6986 1.14101 13.0076 2.47904 13.4283C2.66105 13.4855 2.84963 13.5448 3.04297 13.6077C4.35939 14.0356 6.1302 14.5362 7.05078 14.5561C7.88583 14.5742 8.81784 14.2299 9.84681 13.5233C16.8694 8.78287 20.4945 6.38682 20.7221 6.33516C20.8827 6.29872 21.1052 6.2529 21.2559 6.38689C21.4067 6.52089 21.3918 6.77465 21.3759 6.84273C21.2785 7.25769 17.4215 10.8435 15.4255 12.6992C14.8032 13.2777 14.3619 13.6881 14.2716 13.7818C14.0695 13.9917 13.8635 14.1903 13.6655 14.3812C12.4425 15.5601 11.5254 16.4442 13.7163 17.888C14.7692 18.5818 15.6116 19.1556 16.4522 19.7279C17.3701 20.353 18.2856 20.9765 19.4701 21.753C19.7719 21.9508 20.0602 22.1563 20.3409 22.3564C21.4091 23.118 22.3688 23.8022 23.5545 23.6931C24.2434 23.6297 24.9551 22.9819 25.3165 21.0498C26.1706 16.4836 27.8495 6.59016 28.2376 2.51331C28.2715 2.15613 28.2288 1.699 28.1944 1.49833C28.1601 1.29767 28.0883 1.01176 27.8275 0.800106C27.5186 0.549449 27.0417 0.496591 26.8284 0.500166C25.8587 0.517431 24.3709 1.03477 17.2107 4.01291Z" fill="#FFFDFC"/>
+                                    </svg>
+                                    
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__menu">
+                        <a href="">text</a>
+                        <a href="">text</a>
+                        <a href="">text</a>
+                        <a href="">text</a>
+                        <a href="">text</a>
+                    </div>
+
+                </div>
+                <p>Copyright 2024. All right reserved</p>
+            </div>
+
+            <div class="footer__form">
+                <h3>Остались вопросы?</h3>
+                <p>Оставьте свой номер телефона.
+                    Мы перезвоним и ответим на все вопросы</p>
+                <form action="">
+                    <input placeholder="Телефон" type="text">
+                    <input placeholder="Имя" type="text">
+                    <button class="btn btn-sec">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </body>
 
-<script src="./js/scripts.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="../js/scripts.min.js"></script>
 
 </html>
