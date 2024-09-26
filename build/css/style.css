@@ -144,6 +144,12 @@ section {
   margin: 90px 0;
 }
 
+.nav-index {
+  max-width: 1600;
+  margin: 0 auto;
+  padding: 30px;
+}
+
 .btn {
   background-color: #FFFDFC;
   color: #282828;
@@ -589,7 +595,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .list__card-box h3 {
-  font-size: 20px;
+  font-size: clamp(1.125rem, 1.088rem + 0.15vw, 1.25rem);
 }
 
 .list__card-box p {
@@ -791,6 +797,84 @@ body::-webkit-scrollbar-thumb {
 
 .contacts__map {
   min-height: 350px;
+}
+
+.ways-catalog__wrapper .catalog__card,
+.event-catalog__wrapper .catalog__card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  aspect-ratio: 1;
+  color: #FFFDFC;
+}
+
+.catalog {
+  margin-top: 20px;
+  /* .catalog__filter */
+  /* .catalog__wrapper */
+  /* .catalog__card */
+}
+
+.catalog__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 0 40px;
+}
+
+.catalog__filter button {
+  font-size: clamp(0.625rem, 0.524rem + 0.41vw, 0.938rem);
+}
+
+.catalog__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.catalog__card {
+  height: 100%;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.catalog__card img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.catalog__card-box {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 6px;
+}
+
+.catalog__card-box h3 {
+  font-size: clamp(1.125rem, 1.088rem + 0.15vw, 1.25rem);
+}
+
+.catalog__card-box p {
+  font-size: 15px;
 }
 
 .footer {
@@ -1028,6 +1112,10 @@ body::-webkit-scrollbar-thumb {
     grid-template-columns: 350px 3fr;
   }
 
+  .catalog__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .footer__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1088,6 +1176,10 @@ body::-webkit-scrollbar-thumb {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  .catalog__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 520px) {
@@ -1097,6 +1189,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 479.98px) {
+  .nav-index {
+    padding: 0;
+  }
+
   .header {
     padding: 0;
   }
