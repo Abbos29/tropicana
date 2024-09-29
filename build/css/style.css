@@ -140,6 +140,23 @@ h6 {
   padding: 0 20px;
 }
 
+a {
+  text-decoration: none !important;
+}
+
+button {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+  scale: 1.01;
+  -webkit-box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
 section {
   margin: 90px 0;
 }
@@ -235,7 +252,7 @@ body::-webkit-scrollbar-thumb {
   bottom: -3px;
   width: 0;
   height: 2px;
-  background-color: #000;
+  background-color: #fff;
   -webkit-transition: width 0.5s;
   -o-transition: width 0.5s;
   transition: width 0.5s;
@@ -244,7 +261,7 @@ body::-webkit-scrollbar-thumb {
 .link:hover::after {
   width: 100%;
   left: 0;
-  background-color: #000;
+  background-color: #fff;
 }
 
 .header {
@@ -336,6 +353,16 @@ body::-webkit-scrollbar-thumb {
   width: max-content;
   padding-left: 20px;
   padding-right: 20px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header__btns .tel:hover {
+  opacity: 0.9;
+  scale: 1.01;
+  -webkit-box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.4);
 }
 
 .header__btns a,
@@ -371,6 +398,16 @@ body::-webkit-scrollbar-thumb {
 
 .header__soc a {
   width: 50px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header__soc a:hover {
+  opacity: 0.9;
+  scale: 1.01;
+  -webkit-box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.4);
 }
 
 .header__wrap {
@@ -568,6 +605,32 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
 }
 
+.list__swiper-prev {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.list__swiper-prev:hover {
+  opacity: 0.9;
+  scale: 1.01;
+  -webkit-box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.list__swiper-next {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.list__swiper-next:hover {
+  opacity: 0.9;
+  scale: 1.01;
+  -webkit-box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
 .list__card {
   width: 100%;
   background-repeat: no-repeat;
@@ -578,6 +641,9 @@ body::-webkit-scrollbar-thumb {
 .list__card img {
   width: 100%;
   border-radius: 20px;
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .list__card-box {
@@ -761,6 +827,10 @@ body::-webkit-scrollbar-thumb {
   font-size: 18px;
 }
 
+.contacts__box div a {
+  color: #fff;
+}
+
 .contacts__soc {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -791,6 +861,16 @@ body::-webkit-scrollbar-thumb {
   gap: 12px;
   padding: 10px;
   font-weight: 600;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contacts__soc a:hover {
+  opacity: 0.9;
+  scale: 1.01;
+  -webkit-box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.4);
 }
 
 .contacts__soc a svg {
@@ -855,6 +935,9 @@ body::-webkit-scrollbar-thumb {
 .catalog__card img {
   width: 100%;
   border-radius: 20px;
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .catalog__card-box {
@@ -877,6 +960,37 @@ body::-webkit-scrollbar-thumb {
 
 .catalog__card-box p {
   font-size: 15px;
+}
+
+.error {
+  margin: 150px 0 250px;
+  /* .error__wrapper */
+}
+
+.error__wrapper {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  text-transform: uppercase;
+}
+
+.error__wrapper h1 {
+  font-size: 100px;
+  font-weight: 600;
+}
+
+.error__wrapper h2 {
+  font-weight: 500;
+  font-size: 50px;
 }
 
 .footer {
@@ -967,12 +1081,22 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 10px;
 }
 
 .footer__menu a {
   color: #282828;
-  text-decoration: underline;
+}
+
+.footer__menu a::after {
+  background-color: #000;
+}
+
+.footer__menu a:hover::after {
+  background-color: #000;
 }
 
 .footer__form {
@@ -1181,6 +1305,14 @@ body::-webkit-scrollbar-thumb {
 
   .catalog__wrapper {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .error {
+    margin: 100px 0 200px;
+  }
+
+  .error__wrapper h2 {
+    font-size: 35px;
   }
 }
 
