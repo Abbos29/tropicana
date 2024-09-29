@@ -626,6 +626,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about {
+  margin-top: 0;
   /* .about__wrap */
   /* .about__inner */
   /* .about__inner-box */
@@ -686,6 +687,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .contacts {
+  margin-top: 0;
   /* .contacts__wrapper */
   /* .contacts__top */
   /* .contacts__inner */
