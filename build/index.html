@@ -96,8 +96,6 @@
     </div>
 </nav>
 
-
-
     <div class="container">
         <div class="header__wrap">
             <div class="header__box">
@@ -105,9 +103,35 @@
                 <h1>Откройте для себя мир танца</h1>
             </div>
 
-            <button class="btn btn-sec">Записаться на занятие</button>
+            <button class="btn btn-sec modal__open">Записаться на занятие</button>
         </div>
     </div>
+
+    <div class="modal-big">
+    <div class="modal__wrapper-big">
+        <h5 class="modal__close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M19.7787 5.636L18.3647 4.222L12.0007 10.586L5.63666 4.222L4.22266 5.636L10.5867 12L4.22266 18.364L5.63666 19.778L12.0007 13.414L18.3647 19.778L19.7787 18.364L13.4147 12L19.7787 5.636Z"
+                    fill="white" fill-opacity="0.5" />
+            </svg>
+
+        </h5>
+
+        <div class="modal-big__wrap">
+            <img src="" alt="">
+
+            <div class="modal-big__box">
+                <h3></h3>
+                <h4></h4>
+                <div class="modal-big__description">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </header>
 
     <!-- Ways-list -->
@@ -227,108 +251,8 @@
 
             <div class="list__swiper">
                 <div class="swiper mentor-list__swiper">
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-                            <div class="list__card">
-                                <img src="./img/teacher-1.jpg" alt="ways">
-                                <div class="list__card-box">
-                                    <h3>Раздорских Ольга</h3>
-                                    <p>Тренер по Бачате</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="swiper-slide">
-                            <div class="list__card">
-                                <img src="./img/mentor-list-1.jpg" alt="ways">
-                                <div class="list__card-box">
-                                    <h3>Раздорских Олег</h3>
-                                    <p>Тренер по Бачате</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="list__card">
-                                <img src="./img/mentor-list-1.jpg" alt="ways">
-                                <div class="list__card-box">
-                                    <h3>Шишкина Юлия</h3>
-                                    <p>Тренер по Бачате</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="list__card">
-                                <img src="./img/mentor-list-1.jpg" alt="ways">
-                                <div class="list__card-box">
-                                    <h3>Шмакова Елена</h3>
-                                    <p>Тренер по Бачате</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="list__card">
-                                <img src="./img/mentor-list-1.jpg" alt="ways">
-                                <div class="list__card-box">
-                                    <h3>Колесникова Ольга</h3>
-                                    <p>Тренер по Бачате</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="list__card">
-                                <img src="./img/mentor-list-1.jpg" alt="ways">
-                                <div class="list__card-box">
-                                    <h3>Никулина Анна</h3>
-                                    <p>Тренер по Бачате</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="list__card">
-                                <img src="./img/mentor-list-1.jpg" alt="ways">
-                                <div class="list__card-box">
-                                    <h3>Сырых Роман</h3>
-                                    <p>Тренер по Бачате</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="list__card">
-                                <img src="./img/mentor-list-1.jpg" alt="ways">
-                                <div class="list__card-box">
-                                    <h3>Душкина Светлана</h3>
-                                    <p>Тренер по Бачате</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="list__card">
-                                <img src="./img/mentor-list-1.jpg" alt="ways">
-                                <div class="list__card-box">
-                                    <h3>Костеева Валерия</h3>
-                                    <p>Тренер по Бачате</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="list__card">
-                                <img src="./img/mentor-list-1.jpg" alt="ways">
-                                <div class="list__card-box">
-                                    <h3>Flexopop Deepak</h3>
-                                    <p>Тренер по Бачате</p>
-                                </div>
-                            </div>
-                        </div>
-
+                    <div class="swiper-wrapper mentor-wrapper__swiper">
+                        <!-- ТУТ СЛАЙДЫ С МЕНТОРАМИ -->
 
                     </div>
                 </div>
@@ -622,13 +546,38 @@
                 <form action="">
     <input placeholder="Телефон" type="text">
     <input placeholder="Имя" type="text">
-    <button class="btn btn-sec">Отправить</button>
+    <button class="btn btn-sec">Отправить заявку</button>
 </form>
 
             </div>
         </div>
     </div>
 </footer>
+
+    <!-- Modal -->
+    <div class="modal">
+    <div class="modal__wrapper">
+        <h5 class="modal__close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M19.7787 5.636L18.3647 4.222L12.0007 10.586L5.63666 4.222L4.22266 5.636L10.5867 12L4.22266 18.364L5.63666 19.778L12.0007 13.414L18.3647 19.778L19.7787 18.364L13.4147 12L19.7787 5.636Z"
+                    fill="white" fill-opacity="0.5" />
+            </svg>
+
+        </h5>
+        <h2>Заполните форму</h2>
+        <p>Оставьте свой номер телефона. <br>
+            Мы перезвоним и ответим на все вопросы</p>
+
+
+        <form action="">
+    <input placeholder="Телефон" type="text">
+    <input placeholder="Имя" type="text">
+    <button class="btn btn-sec">Отправить заявку</button>
+</form>
+
+    </div>
+</div>
 
 </body>
 

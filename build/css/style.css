@@ -66,64 +66,6 @@ h6 {
   font-size: inherit;
 }
 
-.modal__wrapper {
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.8);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 2;
-}
-
-.modal__wrapper .modal {
-  background: white;
-  padding: 25px;
-  border-radius: 5px;
-  height: 350px;
-  width: 300px;
-}
-
-.modal__wrapper .modal__title {
-  text-align: center;
-}
-
-.modal__wrapper .modal__close {
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.modal__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid black;
-  border-radius: 30px;
-  height: 50px;
-  width: 150px;
-  cursor: pointer;
-}
-
 @font-face {
   font-family: "";
   src: url("") format("");
@@ -195,21 +137,21 @@ section {
 }
 
 body {
-  background-color: #EAE3DC;
+  background-color: #eae3dc;
 }
 
-body.locked {
+body:has(.modal.active, .modal-big.active) {
   overflow: hidden;
 }
 
 body::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 body::-webkit-scrollbar {
   width: 12px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -993,6 +935,167 @@ body::-webkit-scrollbar-thumb {
   font-size: 50px;
 }
 
+.modal {
+  background: rgba(0, 0, 0, 0.4);
+  color: #FFFDFC;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1000000;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  /* .modal__wrapper */
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__wrapper {
+  max-width: 650px;
+  width: 95%;
+  background: -o-linear-gradient(330.58deg, #053c21 38.35%, #0c6d3d 89.7%);
+  background: linear-gradient(119.42deg, #053c21 38.35%, #0c6d3d 89.7%);
+  padding: 40px;
+  position: relative;
+  border-radius: 30px;
+}
+
+.modal__wrapper h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.modal__wrapper p {
+  margin: 12px 0 35px;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.modal__close {
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-left: auto;
+  cursor: pointer;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.modal-big {
+  background: rgba(0, 0, 0, 0.4);
+  color: #FFFDFC;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1000000;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.modal-big.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-big .modal__wrapper-big {
+  max-width: 1150px;
+  width: 95%;
+  background: -o-linear-gradient(330.58deg, #053c21 38.35%, #0c6d3d 89.7%);
+  background: linear-gradient(119.42deg, #053c21 38.35%, #0c6d3d 89.7%);
+  padding: 40px;
+  position: relative;
+  border-radius: 30px;
+}
+
+.modal-big__wrap {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.modal-big__wrap img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.modal-big__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.modal-big__box h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.modal-big__box h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.modal-big__box h4 {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.modal-big__box ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.modal-big__box li {
+  list-style-type: disc;
+}
+
 .footer {
   padding-bottom: 90px;
   /* .footer__wrapper */
@@ -1122,7 +1225,7 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 20px;
 }
 
-.footer__form form {
+form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1133,15 +1236,15 @@ body::-webkit-scrollbar-thumb {
   gap: 10px;
 }
 
-.footer__form form input {
+form input {
   width: 100%;
   border-radius: 60px;
   padding: clamp(0.8rem, 0.7rem + 0.46vw, 1.375rem) clamp(1.5rem, 1.24rem + 1.07vw, 2.375rem);
   border: 1px solid #282828;
 }
 
-.footer__form form button {
-  font-size: 16px;
+form button {
+  font-size: 16px !important;
 }
 
 @media (max-width: 1449.98px) {
@@ -1314,6 +1417,13 @@ body::-webkit-scrollbar-thumb {
   .error__wrapper h2 {
     font-size: 35px;
   }
+
+  .modal-big__wrap {
+    grid-template-columns: 1fr;
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 }
 
 @media (max-width: 520px) {
@@ -1337,6 +1447,18 @@ body::-webkit-scrollbar-thumb {
 
   .contacts__soc a {
     font-size: 15px;
+  }
+
+  .modal__wrapper {
+    padding: 30px;
+  }
+
+  .modal__wrapper h2 {
+    font-size: 32px;
+  }
+
+  .modal-big .modal__wrapper-big {
+    padding: 30px;
   }
 
   .footer__inner {
