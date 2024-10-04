@@ -582,6 +582,7 @@ body::-webkit-scrollbar-thumb {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  cursor: pointer;
 }
 
 .list__card img {
@@ -1006,6 +1007,13 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   top: 24px;
   right: 24px;
+  z-index: 100;
+  background: none;
+}
+
+.modal__close:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .modal-big {

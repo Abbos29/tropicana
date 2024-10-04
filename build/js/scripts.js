@@ -101,7 +101,7 @@ const swiperEventList = new Swiper('.event-list__swiper', {
 // OPEN MODAL
 
 const heroModal = document.querySelector('.modal');
-const heroModalClose = document.querySelector('.modal__close');
+const heroModalClose = document.querySelectorAll('.modal__close');
 const heroModalOpen = document.querySelectorAll('.modal__open');
 
 // Проверяем, есть ли элементы на странице, прежде чем добавлять к ним обработчики событий
@@ -112,9 +112,13 @@ if (heroModal && heroModalClose && heroModalOpen.length > 0) {
         });
     });
 
-    heroModalClose.addEventListener('click', () => {
-        heroModal.classList.remove('active');
-    });
+
+    heroModalClose.forEach(btn => {
+        btn.addEventListener('click', () => {
+            heroModal.classList.remove('active');
+        });
+    })
+ 
 
     heroModal.addEventListener('click', (e) => {
         if (!e.target.closest('.modal__wrapper')) {
