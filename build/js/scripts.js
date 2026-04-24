@@ -3,9 +3,28 @@
 const burger = document.querySelector('.burger')
 const menu = document.querySelector('.header__menu')
 
-burger.addEventListener('click', () => {
-    menu.classList.toggle('open-menu')
-})
+if (burger && menu) {
+    burger.addEventListener('click', () => {
+        menu.classList.toggle('open-menu')
+    })
+}
+
+// LENIS SMOOTH SCROLL
+if (window.Lenis) {
+    const lenis = new Lenis({
+        duration: 1.1,
+        smoothWheel: true,
+        wheelMultiplier: 1,
+        touchMultiplier: 1.2,
+    });
+
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+}
 
 
 
@@ -127,6 +146,43 @@ if (heroModal && heroModalClose && heroModalOpen.length > 0) {
     });
 }
 
+// FILTER BUTTONS NAVIGATION
+const filterRoutes = {
+    'Для детей': '/ways#children',
+    'Для взрослых': '/ways#adults',
+    'Учебные классы': '/ways#classes',
+    'Смотреть все': '/ways',
+};
+
+document.querySelectorAll('.list__filter .btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const targetRoute = filterRoutes[btn.textContent.trim()];
+        if (targetRoute) {
+            window.location.href = targetRoute;
+        }
+    });
+});
+
+// SCROLL REVEAL ANIMATION
+const revealNodes = document.querySelectorAll('section, .list__card, .about, .contact, .footer__wrapper');
+revealNodes.forEach(node => node.classList.add('reveal-item'));
+
+if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.15,
+    });
+
+    revealNodes.forEach(node => revealObserver.observe(node));
+} else {
+    revealNodes.forEach(node => node.classList.add('is-visible'));
+}
 
 
 // MENTORS DATA
@@ -392,4 +448,3 @@ document.querySelectorAll('.form').forEach(form => {
             });
     });
 });
-
